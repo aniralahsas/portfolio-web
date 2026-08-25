@@ -1059,7 +1059,7 @@ export default function App() {
             <div style={{ display: "inline-grid", gridTemplateColumns: "max-content", gridTemplateRows: "max-content", lineHeight: 0, placeItems: "start", position: "relative", flexShrink: 0 }}>
               <div style={{ backgroundColor: cream, gridColumn: 1, gridRow: 1, height: "22px", marginLeft: 0, marginTop: "50px", position: "relative", width: "202px" }} />
               <div style={{ backgroundColor: cream, gridColumn: 1, gridRow: 1, height: "20px", marginLeft: 0, marginTop: "96px", position: "relative", width: "144px" }} />
-              <div style={{ backgroundColor: cream, gridColumn: 1, gridRow: 1, height: "20px", marginLeft: 0, marginTop: "212px", position: "relative", width: "216px" }} />
+              <div style={{ backgroundColor: cream, gridColumn: 1, gridRow: 1, height: "20px", marginLeft: 0, marginTop: "210px", position: "relative", width: "216px" }} />
               <div style={{ wordBreak: "break-word", gridColumn: 1, gridRow: 1, ...reg, marginLeft: 0, marginTop: 0, fontStyle: "normal", position: "relative", color: cream, fontSize: 0, width: "432px", whiteSpace: "pre-wrap" }}>
                 <p style={{ lineHeight: "normal", marginBottom: 0, fontSize: "26px" }}>ЛАРИНА АЛЕКСАНДРА СЕРГЕЕВНА</p>
                 <p style={{ lineHeight: "normal", marginBottom: 0, fontSize: "20px" }}>​</p>
@@ -1130,13 +1130,6 @@ export default function App() {
 
           {/* Design sub-sections */}
           <div style={{ position: "relative", paddingLeft: "120px", paddingBottom: "110px" }}>
-            {/* vector526: fixed-height beside the 4 subsection headers only, matching LANDING_STATE_CLOSED */}
-            <div style={{ position: "absolute", left: "0px", top: 0, height: "344px", width: "0" }}>
-              <div style={{ position: "absolute", inset: "0 -1px" }}>
-                <img alt="" style={{ display: "block", maxWidth: "none", width: "auto", height: "100%" }} src={imgVector526} />
-              </div>
-            </div>
-
             <SubHeader num="[1.1]" label="АЙДЕНТИКА" open={isOpen("design_id")} onClick={() => toggle("design_id")} />
             <Collapsible open={isOpen("design_id")}><DesignIdContent /></Collapsible>
 
@@ -1153,7 +1146,7 @@ export default function App() {
           {/* ── [2] ИВЕНТ ── */}
           <div
             ref={el => { refs.event.current = el; }}
-            style={{ display: "flex", gap: "20px", alignItems: "center", paddingLeft: "73px", paddingBottom: "70px", color: cream, fontSize: "30px", whiteSpace: "nowrap" }}
+            style={{ display: "flex", gap: "20px", alignItems: "center", paddingLeft: "73px", paddingBottom: "60px", color: cream, fontSize: "30px", whiteSpace: "nowrap" }}
           >
             <p style={{ ...bold, margin: 0 }}>[2]</p>
             <p style={{ ...reg, margin: 0 }}>ИВЕНТ</p>
@@ -1265,13 +1258,6 @@ export default function App() {
 
           {/* Kreativ sub-sections with side vector */}
           <div style={{ position: "relative", paddingLeft: "120px", paddingBottom: "110px" }}>
-            {/* vector536: fixed-height beside the 3 subsection headers only, matching LANDING_STATE_CLOSED */}
-            <div style={{ position: "absolute", left: "0px", top: 0, height: "260px", width: "0" }}>
-              <div style={{ position: "absolute", inset: "0 -1px" }}>
-                <img alt="" style={{ display: "block", maxWidth: "none", width: "auto", height: "100%" }} src={imgVector536} />
-              </div>
-            </div>
-
             <SubHeader num="[4.1]" label="ИССЛЕДОВАНИЯ"  open={isOpen("create_research")}     onClick={() => toggle("create_research")} />
             <Collapsible open={isOpen("create_research")}><CreateResearchContent /></Collapsible>
 
@@ -1288,7 +1274,7 @@ export default function App() {
               ПОЭТОМУ ЕСЛИ ВЫ ИЩЕТЕ...
             </p>
             {/* Looking For image */}
-            <div style={{ position: "relative", display: "flex", alignItems: "center", justifyContent: "center", height: "542.838px", width: "440.485px" }}>
+            <div style={{ position: "relative", top: "-7px", display: "flex", alignItems: "center", justifyContent: "center", height: "542.838px", width: "440.485px" }}>
               <div style={{ flexShrink: 0, transform: "rotate(-3.07deg)", position: "relative", zIndex: 1 }}>
                 <div style={{ backgroundColor: cream, height: "521.434px", width: "413.117px" }} />
               </div>
@@ -1311,15 +1297,15 @@ export default function App() {
             {/* All contact items at same y, positioned by x offset matching Figma (page x − 80px padding) */}
             <div style={{ position: "relative", height: "38px" }}>
               {/* ТГ: label at page x=80, link at x=132 */}
-              <div style={{ position: "absolute", backgroundColor: cream, height: "31px", left: "0px", top: "4px", width: "32px" }} />
+              <div style={{ position: "absolute", backgroundColor: cream, height: "31px", left: "0px", top: "2px", width: "32px" }} />
               <p style={{ ...reg, position: "absolute", left: "0px", top: 0, color: dark, fontSize: "26.299px", lineHeight: "normal", whiteSpace: "nowrap", margin: 0 }}>ТГ</p>
               <a style={{ ...reg, position: "absolute", left: "52px", top: 0, color: cream, fontSize: "26.299px", lineHeight: "normal", textDecoration: "underline", cursor: "pointer", whiteSpace: "nowrap" }} href="https://t.me/aniralahsas" target="_blank" rel="noopener noreferrer">@aniralahsas</a>
               {/* ПОЧТА: label at page x=458 → container x=378, value at x=557 → 477 */}
-              <div style={{ position: "absolute", backgroundColor: cream, height: "31px", left: "379px", top: "4px", width: "78px" }} />
+              <div style={{ position: "absolute", backgroundColor: cream, height: "31px", left: "379px", top: "2px", width: "78px" }} />
               <p style={{ ...reg, position: "absolute", left: "378px", top: 0, color: dark, fontSize: "26.299px", lineHeight: "normal", whiteSpace: "nowrap", margin: 0 }}>ПОЧТА</p>
               <p style={{ ...reg, position: "absolute", left: "477px", top: 0, color: cream, fontSize: "26.299px", lineHeight: "normal", whiteSpace: "nowrap", margin: 0 }}>aniralahsas@mail.ru</p>
               {/* ЗАПРЕЩЕНКА: label at page x=994 → container x=914, link at x=1172 → 1092 */}
-              <div style={{ position: "absolute", backgroundColor: cream, height: "31px", left: "915px", top: "4px", width: "157px" }} />
+              <div style={{ position: "absolute", backgroundColor: cream, height: "31px", left: "915px", top: "2px", width: "157px" }} />
               <p style={{ ...reg, position: "absolute", left: "914px", top: 0, color: dark, fontSize: "26.299px", lineHeight: "normal", whiteSpace: "nowrap", margin: 0 }}>ЗАПРЕЩЕНКА</p>
               <a style={{ ...reg, position: "absolute", left: "1092px", top: 0, color: cream, fontSize: "26.299px", lineHeight: "normal", textDecoration: "underline", cursor: "pointer", whiteSpace: "nowrap" }} href="https://www.instagram.com/aniralahsas/" target="_blank" rel="noopener noreferrer">@aniralahsas</a>
             </div>
