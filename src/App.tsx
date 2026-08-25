@@ -224,10 +224,10 @@ function DesignIdContent() {
           </div>
         </div>
         {/* images row */}
-        <div style={{ display: "flex", gap: "12px", height: "327px", alignItems: "center", width: "1240px" }}>
+        <div style={{ display: "flex", gap: "12px", height: "400px", alignItems: "center", width: "1240px" }}>
           {[imgRect282, imgRect283, imgRect284, imgRect285].map((src, i) => (
-            <div key={i} style={{ height: "327px", position: "relative", flexShrink: 0, width: "300px" }}>
-              <img alt="" style={i === 2 ? { position: "absolute", inset: 0, maxWidth: "none", pointerEvents: "none", height: "100%", left: "-26.55%", width: "163.36%" } : containImg} src={src} />
+            <div key={i} style={{ height: "400px", position: "relative", flexShrink: 0, width: "300px" }}>
+              <img alt="" style={coverImg} src={src} />
             </div>
           ))}
         </div>
@@ -261,10 +261,10 @@ function DesignIdContent() {
             </div>
             <div style={{ display: "flex", flexDirection: "column", gap: "10px", width: "883px" }}>
               <div style={titleWrap}>
-                <div style={{ ...highlight, width: "206px" }} />
+                <div style={{ ...highlight, width: "216px" }} />
                 <p style={titleText}>LUMI, май 2026</p>
               </div>
-              <div style={{ ...reg, color: cream, fontSize: "23px" }}>
+              <div style={{ ...reg, color: cream, fontSize: "23px", position: "relative", top: "20px" }}>
                 <p style={{ lineHeight: "normal", marginBottom: 0 }}>Медиа о поп-культуре через призму критических теорий.</p>
                 <p style={{ lineHeight: "normal", margin: 0 }}>(Ех-Клуб Любителей Тейлор Свифт)</p>
               </div>
@@ -310,7 +310,7 @@ function DesignIdContent() {
             </div>
             <div style={{ display: "flex", flexDirection: "column", gap: "10px", width: "883px" }}>
               <div style={titleWrap}>
-                <div style={{ ...highlight, width: "553px" }} />
+                <div style={{ ...highlight, width: "563px" }} />
                 <p style={titleText}>VISIONS FILMMAKERS CLUB, апрель 2025</p>
               </div>
               <p style={descStyle}>
@@ -1077,7 +1077,7 @@ export default function App() {
             </div>
             <div style={{ display: "flex", flexDirection: "column", gap: "23px", alignItems: "flex-start", position: "relative", flexShrink: 0, width: "428.966px" }}>
               <div style={{ display: "inline-grid", gridTemplateColumns: "max-content", gridTemplateRows: "max-content", lineHeight: 0, placeItems: "start", position: "relative", flexShrink: 0 }}>
-                <div style={{ backgroundColor: cream, gridColumn: 1, gridRow: 1, height: "26px", width: "85px" }} />
+                <div style={{ backgroundColor: cream, gridColumn: 1, gridRow: 1, height: "26px", width: "82px" }} />
                 <p style={{ ...reg, lineHeight: "normal", marginLeft: "2px", marginTop: "3px", fontStyle: "normal", position: "relative", gridColumn: 1, gridRow: 1, color: dark, fontSize: "20px", whiteSpace: "nowrap", margin: 0 }}>НАВЫКИ:</p>
               </div>
               <div style={{ display: "flex", gap: "40px", alignItems: "center", position: "relative", flexShrink: 0, width: "100%" }}>
@@ -1146,7 +1146,7 @@ export default function App() {
           {/* ── [2] ИВЕНТ ── */}
           <div
             ref={el => { refs.event.current = el; }}
-            style={{ display: "flex", gap: "20px", alignItems: "center", paddingLeft: "73px", paddingBottom: "60px", color: cream, fontSize: "30px", whiteSpace: "nowrap" }}
+            style={{ display: "flex", gap: "20px", alignItems: "center", paddingLeft: "73px", paddingBottom: "40px", marginTop: "-20px", color: cream, fontSize: "30px", whiteSpace: "nowrap" }}
           >
             <p style={{ ...bold, margin: 0 }}>[2]</p>
             <p style={{ ...reg, margin: 0 }}>ИВЕНТ</p>
@@ -1274,7 +1274,7 @@ export default function App() {
               ПОЭТОМУ ЕСЛИ ВЫ ИЩЕТЕ...
             </p>
             {/* Looking For image */}
-            <div style={{ position: "relative", top: "-7px", display: "flex", alignItems: "center", justifyContent: "center", height: "542.838px", width: "440.485px" }}>
+            <div style={{ position: "relative", top: "-22px", display: "flex", alignItems: "center", justifyContent: "center", height: "542.838px", width: "440.485px" }}>
               <div style={{ flexShrink: 0, transform: "rotate(-3.07deg)", position: "relative", zIndex: 1 }}>
                 <div style={{ backgroundColor: cream, height: "521.434px", width: "413.117px" }} />
               </div>
@@ -1297,15 +1297,15 @@ export default function App() {
             {/* All contact items at same y, positioned by x offset matching Figma (page x − 80px padding) */}
             <div style={{ position: "relative", height: "38px" }}>
               {/* ТГ: label at page x=80, link at x=132 */}
-              <div style={{ position: "absolute", backgroundColor: cream, height: "31px", left: "0px", top: "2px", width: "32px" }} />
+              <div style={{ position: "absolute", backgroundColor: cream, height: "31px", left: "0px", top: "-1px", width: "32px" }} />
               <p style={{ ...reg, position: "absolute", left: "0px", top: 0, color: dark, fontSize: "26.299px", lineHeight: "normal", whiteSpace: "nowrap", margin: 0 }}>ТГ</p>
               <a style={{ ...reg, position: "absolute", left: "52px", top: 0, color: cream, fontSize: "26.299px", lineHeight: "normal", textDecoration: "underline", cursor: "pointer", whiteSpace: "nowrap" }} href="https://t.me/aniralahsas" target="_blank" rel="noopener noreferrer">@aniralahsas</a>
               {/* ПОЧТА: label at page x=458 → container x=378, value at x=557 → 477 */}
-              <div style={{ position: "absolute", backgroundColor: cream, height: "31px", left: "379px", top: "2px", width: "78px" }} />
+              <div style={{ position: "absolute", backgroundColor: cream, height: "31px", left: "379px", top: "-1px", width: "78px" }} />
               <p style={{ ...reg, position: "absolute", left: "378px", top: 0, color: dark, fontSize: "26.299px", lineHeight: "normal", whiteSpace: "nowrap", margin: 0 }}>ПОЧТА</p>
               <p style={{ ...reg, position: "absolute", left: "477px", top: 0, color: cream, fontSize: "26.299px", lineHeight: "normal", whiteSpace: "nowrap", margin: 0 }}>aniralahsas@mail.ru</p>
               {/* ЗАПРЕЩЕНКА: label at page x=994 → container x=914, link at x=1172 → 1092 */}
-              <div style={{ position: "absolute", backgroundColor: cream, height: "31px", left: "915px", top: "2px", width: "157px" }} />
+              <div style={{ position: "absolute", backgroundColor: cream, height: "31px", left: "915px", top: "-1px", width: "157px" }} />
               <p style={{ ...reg, position: "absolute", left: "914px", top: 0, color: dark, fontSize: "26.299px", lineHeight: "normal", whiteSpace: "nowrap", margin: 0 }}>ЗАПРЕЩЕНКА</p>
               <a style={{ ...reg, position: "absolute", left: "1092px", top: 0, color: cream, fontSize: "26.299px", lineHeight: "normal", textDecoration: "underline", cursor: "pointer", whiteSpace: "nowrap" }} href="https://www.instagram.com/aniralahsas/" target="_blank" rel="noopener noreferrer">@aniralahsas</a>
             </div>
